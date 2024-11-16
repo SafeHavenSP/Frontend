@@ -1,0 +1,56 @@
+.message-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .loading, .error, .no-chats {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  .chat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .chat-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    width: 1000px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .chat-card:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .chat-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  
+  .chat-body p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .chat-body span {
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 5px;
+  }
+  

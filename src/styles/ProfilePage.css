@@ -1,0 +1,180 @@
+
+.profile-page {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+ 
+  min-height: 100vh; 
+  text-align: center; 
+}
+
+.karma-section {
+  margin: 5px 0; 
+}
+
+
+.balance-container {
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 10px; 
+}
+
+.balance-section h2 {
+  margin: 0; 
+  padding-bottom: 10px; 
+}
+
+
+button {
+ 
+  padding: 10px 20px; 
+  font-size: 16px; 
+}
+
+.logout-button-container {
+  position: absolute;
+  top: 20px; 
+  left: 20px; 
+  padding: 10px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4d4f; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #e33b3d;
+}
+
+.products-section {
+  padding: 20px;
+}
+
+.products-scroll-view {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px;  
+  margin-top: 20px;
+  overflow-y: auto;
+  max-height: 500px;  
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;  
+  background-color: #f8f8f8;  
+}
+
+.product-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd; 
+  border-radius: 8px;  
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-item h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.product-images {
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.product-images img {
+  width: 100px;  
+  height: 100px;  
+  object-fit: cover; 
+  border-radius: 5px;  
+}
+
+.upload-popup {
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px; 
+  width: 90%; 
+  max-width: 500px; 
+  z-index: 1000; 
+}
+
+.upload-popup input[type="text"],
+.upload-popup input[type="number"],
+.upload-popup textarea {
+  width: calc(100% - 20px); 
+  margin-bottom: 15px; 
+  padding: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  box-sizing: border-box; 
+  font-size: 1em; 
+}
+
+.upload-popup input[type="file"] {
+  margin-bottom: 15px; 
+}
+
+.delete-button{
+  padding: 5px 10px;  
+  font-size: 0.9em;  
+  border: none;  
+  width: 70px;
+  border-radius: 4px;  
+  background-color: #dc3545;  
+  color: #fff;  
+  cursor: pointer; 
+  transition: background-color 0.3s;  
+  margin-top: 10px;  
+}
+
+
+.upload-popup button {
+  padding: 10px 15px; 
+  margin-right: 10px; 
+  border: none;
+  border-radius: 5px; 
+  background-color: #007bff; 
+  color: #fff; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.upload-popup button:hover {
+  background-color: #0056b3; 
+}
+
+.upload-popup button:last-child {
+  background-color: #dc3545;
+}
+
+.upload-popup button:last-child:hover {
+  background-color: #a71d2a; 
+}
